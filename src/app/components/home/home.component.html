@@ -1,3 +1,17 @@
-<p>home works!</p>
-
-<button (click)="navigateTo('office-breakfast')">Office Breakfast</button>
+<nz-layout>
+  <nz-content
+    ><div class="home-bg">
+      <div>
+        <h1>We ❤️ BLK</h1>
+        <h1>We 🩷 Food</h1>
+      </div>
+    </div></nz-content
+  >
+  <nz-footer>
+    <button (click)="navigateTo('office-breakfast')">Office Breakfast</button>
+    <button (click)="navigateTo('office-lunch')">Office Lunch</button>
+    <button (click)="navigateTo('outside')">
+      Outside Office Recommendations
+    </button>
+  </nz-footer>
+</nz-layout>

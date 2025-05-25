@@ -1,0 +1,18 @@
+.home-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../resources/cafe_image.jpg");
+  height: 85vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-bg h1 {
+  margin: 0;
+  color: white;
+  font-size: 40px;
+}

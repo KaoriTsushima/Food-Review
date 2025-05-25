@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  button {
+    height: 50px;
+  }
+}
+
+.header-icon {
+  height: 50px;
+  margin-right: 10px;
+}

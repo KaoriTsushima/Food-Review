@@ -1,1 +1,6 @@
-<router-outlet />
+<nz-layout class="app-container">
+  <nz-header *ngIf="headerVisible">
+    <app-header></app-header>
+  </nz-header>
+  <nz-content><router-outlet></router-outlet></nz-content>
+</nz-layout>
