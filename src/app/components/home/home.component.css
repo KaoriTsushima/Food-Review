@@ -16,3 +16,15 @@
   color: white;
   font-size: 40px;
 }
+.footer-menu a {
+  font-family: "Kapakana", cursive;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  padding: 20pt;
+  margin-left: 50pt;
+  margin-right: 55pt;
+}
+.footer-menu a:hover {
+  color: rgb(4, 115, 4);
+}
