@@ -1,4 +1,8 @@
 <div class="header">
   <img class="header-icon" src="/resources/kapibarasan_logo.png" />
-  <button (click)="navigateTo('/')">Home</button>
+  <a [routerLink]="'./home'">Home</a>
+  <a [routerLink]="'./office-breakfast'">Office Breakfast</a>
+  <a [routerLink]="'./office-lunch'">Office Lunch</a>
+  <a [routerLink]="'./outside'">Near Office Recommendations</a>
+  <a [routerLink]="'./log-in'">Log in</a>
 </div>
