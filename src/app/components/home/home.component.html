@@ -7,11 +7,9 @@
       </div>
     </div></nz-content
   >
-  <nz-footer>
-    <button (click)="navigateTo('office-breakfast')">Office Breakfast</button>
-    <button (click)="navigateTo('office-lunch')">Office Lunch</button>
-    <button (click)="navigateTo('outside')">
-      Outside Office Recommendations
-    </button>
+  <nz-footer class="footer-menu">
+      <a [routerLink]="'./office-breakfast'">Office Breakfast </a>
+      <a [routerLink]="'./office-lunch'">Office Lunch </a>
+      <a [routerLink]="'./outside'">Near Office Recommendations</a>
   </nz-footer>
 </nz-layout>

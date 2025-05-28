@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NzLayoutModule],
+  imports: [NzLayoutModule, RouterLink, RouterOutlet],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
