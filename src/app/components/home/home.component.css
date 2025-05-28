@@ -16,15 +16,24 @@
   color: white;
   font-size: 40px;
 }
+.footer-menu {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 15vh;
+}
+
 .footer-menu a {
   font-family: "Kapakana", cursive;
   color: black;
   font-size: 32px;
   text-align: center;
-  padding: 20pt;
-  margin-left: 50pt;
-  margin-right: 55pt;
+  padding: 30px 50px;
 }
+
 .footer-menu a:hover {
   color: rgb(4, 115, 4);
 }
