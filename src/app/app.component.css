@@ -1,3 +1,11 @@
 .app-container {
   height: 100vh;
 }
+
+.app-container nz-header {
+  background-color: white;
+  border-bottom: 2px solid green;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
