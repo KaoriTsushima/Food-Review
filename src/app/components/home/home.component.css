@@ -27,7 +27,7 @@
 }
 
 .footer-menu a {
-  font-family: "Kapakana", cursive;
+  font-family: "Bilbo Swash Caps", cursive;
   color: black;
   font-size: 32px;
   text-align: center;
@@ -35,5 +35,5 @@
 }
 
 .footer-menu a:hover {
-  color: rgb(4, 115, 4);
+  color: #0e6903;
 }

@@ -1,4 +1,15 @@
 <div class="header">
-  <img class="header-icon" src="/resources/kapibarasan_logo.png" />
-  <button (click)="navigateTo('/')">Home</button>
+  <div class="main-navigation">
+    <a class="home-nav" [routerLink]="'./'">
+      <img class="header-icon" src="/resources/kapibarasan_logo.png" />
+      Home
+    </a>
+    <a [routerLink]="'./office-breakfast'">Office Breakfast</a>
+    <a [routerLink]="'./office-lunch'">Office Lunch</a>
+    <a [routerLink]="'./outside'">Near Office Recommendations</a>
+    <a [routerLink]="'./add-review'">Add Review</a>
+  </div>
+  <div>
+    <a [routerLink]="'./log-in'">Log in</a>
+  </div>
 </div>
