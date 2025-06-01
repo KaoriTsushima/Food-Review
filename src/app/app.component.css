@@ -9,3 +9,7 @@
   padding: 0;
   overflow: hidden;
 }
+
+.app-container nz-content {
+  padding: 10px;
+}

@@ -1,3 +1,7 @@
 h1 {
   font-family: "Bilbo Swash Caps", cursive;
 }
+
+.warning-icon {
+  margin-right: 10px;
+}
