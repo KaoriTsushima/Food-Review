@@ -10,7 +10,4 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 })
 export class HeaderComponent {
   constructor(private readonly router: Router) {}
-  navigateTo(path: string) {
-    this.router.navigate([path]);
-  }
 }
