@@ -1,0 +1,9 @@
+.sign-up-form {
+  margin-bottom: 20px;
+}
+
+.sign-up-form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
