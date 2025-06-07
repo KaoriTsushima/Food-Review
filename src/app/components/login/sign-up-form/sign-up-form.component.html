@@ -1,5 +1,21 @@
 <form nz-form [formGroup]="validateForm" class="sign-up-form" (ngSubmit)="submitForm()">
   <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="firstName">First name</nz-form-label>
+    <nz-form-control nzErrorTip="Please input your First name!">
+      <nz-input-group nzPrefixIcon="user">
+        <input type="text" nz-input formControlName="firstName" placeholder="First name" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="lastName">Last name</nz-form-label>
+    <nz-form-control nzErrorTip="Please input your Last name!">
+      <nz-input-group nzPrefixIcon="user">
+        <input type="text" nz-input formControlName="lastName" placeholder="Last name" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
     <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email">Email</nz-form-label>
     <nz-form-control nzErrorTip="Please input your Email!">
       <nz-input-group nzPrefixIcon="mail">
