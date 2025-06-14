@@ -23,3 +23,7 @@
 .login-form-button {
   width: 100%;
 }
+.button {
+  background-color: green;
+  border-radius: 10%;
+}

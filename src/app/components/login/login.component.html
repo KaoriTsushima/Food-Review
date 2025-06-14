@@ -1,17 +1,38 @@
-<button *ngIf="user === null" nz-button [nzType]="'primary'" (click)="showModal()"><span>Sign in</span></button>
+<button
+  class="button"
+  *ngIf="user === null"
+  nz-button
+  [nzType]="'primary'"
+  (click)="showModal()"
+>
+  <span><strong>Sign in</strong></span>
+</button>
 
-<nz-modal nzWidth="650px" [(nzVisible)]="isVisible" nzTitle="Sign in / Sign up" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" 
-[nzFooter]="null">
+<nz-modal
+  nzWidth="650px"
+  [(nzVisible)]="isVisible"
+  nzTitle="Sign in / Sign up"
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="handleOk()"
+  [nzFooter]="null"
+>
   <div class="sign-in-content" *nzModalContent>
-    <app-login-form *ngIf="screen === 'sign-in'" (onLoginSuccessful)="handleLoginSuccess()" (onSwitchSignUp)="showSignUp()"/>
-    <app-sign-up-form *ngIf="screen === 'sign-up'" (onSignUpSuccessful)="handleOk()" (onSwitchSignIn)="showSignIn()"/>
-    <div class="sign-in-content-buttons">
-    <!-- <button nz-button nzType="primary" (click)="handleOk()" [nzLoading]="false">Login</button> -->
-    </div>
+    <app-login-form
+      *ngIf="screen === 'sign-in'"
+      (onLoginSuccessful)="handleLoginSuccess()"
+      (onSwitchSignUp)="showSignUp()"
+    />
+    <app-sign-up-form
+      *ngIf="screen === 'sign-up'"
+      (onSignUpSuccessful)="handleOk()"
+      (onSwitchSignIn)="showSignIn()"
+    />
   </div>
 </nz-modal>
 
 <div *ngIf="user">
   Hello, {{ user.user_metadata.displayName }}!
-  <button nz-button [nzType]="'primary'" (click)="logout()">Logout</button>
+  <button class="button" nz-button [nzType]="'primary'" (click)="logout()">
+    <strong>Logout</strong>
+  </button>
 </div>
