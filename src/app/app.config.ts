@@ -12,14 +12,24 @@ import uk from '@angular/common/locales/uk';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
-import { IconDefinition } from '@ant-design/icons-angular';
+
 import { provideNzIcons } from 'ng-zorro-antd/icon';
-
-import { WarningOutline } from '@ant-design/icons-angular/icons';
-
-const icons: IconDefinition[] = [WarningOutline];
+import { IconDefinition } from '@ant-design/icons-angular';
+import {
+  LockOutline,
+  MailOutline,
+  UserOutline,
+  WarningOutline,
+} from '@ant-design/icons-angular/icons';
 
 registerLocaleData(uk);
+
+const icons: IconDefinition[] = [
+  MailOutline,
+  LockOutline,
+  UserOutline,
+  WarningOutline,
+];
 
 export const appConfig: ApplicationConfig = {
   providers: [
