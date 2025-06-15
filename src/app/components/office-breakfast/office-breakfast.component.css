@@ -5,3 +5,8 @@ h1 {
 .warning-icon {
   margin-right: 10px;
 }
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

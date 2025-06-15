@@ -1,0 +1,13 @@
+<nz-card nzHoverable class="review-card" [nzCover]="coverTemplate">
+  <!-- <nz-card-meta nzTitle="Europe Street beat" nzDescription="www.instagram.com"></nz-card-meta> -->
+
+  <p>{{ review?.shopName }}</p>
+  <p>{{ review?.distance }} mins walk</p>
+  <p>{{ review?.like }}</p>
+  <p>{{ review?.meal }}</p>
+  <p>#{{ review?.price }}</p>
+  <p>{{ review?.review }}</p>
+</nz-card>
+<ng-template #coverTemplate>
+  <img *ngIf="review?.image" alt="picture of meal" src="{{ review?.image }}" />
+</ng-template>

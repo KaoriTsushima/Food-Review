@@ -4,3 +4,7 @@
   <span nz-icon nzType="warning" nzTheme="outline" class="warning-icon"></span
   >These reviews are personal opinions.
 </p>
+
+<div class="card-container">
+  <app-review-card *ngFor="let review of reviews" [review]="review" />
+</div>
